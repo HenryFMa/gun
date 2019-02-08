@@ -2,12 +2,10 @@
   "name": "gun-now",
   "version": 2,
   "builds": [
-    { "src": "examples/**/*.html", "use": "@now/static" },
-    { "src": "examples/now/node-http/index.js", "use": "@now/node-server" },
-    { "src": "examples/gun-now.js", "use": "@now/node-server" }
+    { "src": "examples/**/*.html", "use": "@now/static" }
   ],
   "routes": [
-    {"src": "/examples", "dest": "/examples"},
+    {"src": "/examples-home", "dest": "/examples/index.html"},
     {"src": "/examples/home", "dest": "/examples/index.html"},
     {"src": "/gun-now", "dest": "/examples/gun-now.js"},
     {"src": "/node-http", "dest": "/examples/now/node-http/index.js"}
