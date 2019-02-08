@@ -5,5 +5,11 @@
     { "src": "examples/**/*.html", "use": "@now/static" },
     { "src": "examples/now/node-http/index.js", "use": "@now/node-server" },
     { "src": "examples/gun-now.js", "use": "@now/node-server" }
+  ],
+  "routes": [
+    {"src": "/examples", "dest": "/examples"},
+    {"src": "/examples/home", "dest": "/examples/index.html"},
+    {"src": "/gun-now", "dest": "/examples/gun-now.js"},
+    {"src": "/node-http", "dest": "/examples/now/node-http/index.js"}
   ]
 }
