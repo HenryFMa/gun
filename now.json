@@ -1,3 +1,5 @@
 {
-  "type": "npm"
+  "name": "gun-now",
+  "version": 2,
+  "builds": [{ "src": "examples/http.js", "use": "@now/node-server" }]
 }
