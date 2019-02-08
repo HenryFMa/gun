@@ -3,7 +3,6 @@
   "version": 2,
   "builds": [
     { "src": "examples/now/node-http/index.js", "use": "@now/node-server" },
-    { "src": "examples/http.js", "use": "@now/node-server" },
-    { "src": "examples/index.html", "use": "@now/static" }
+    { "src": "examples/gun-now.js", "use": "@now/node-server" }
   ]
 }
