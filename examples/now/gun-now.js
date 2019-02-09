@@ -9,4 +9,4 @@ Gun({ file: '/tmp/db/data.json', web: server.listen(), radisk: false, localStora
 
 var server = require('http').createServer().listen();
 
-Gun({web: server});
+Gun({ file: '/tmp/db/data.json', web: server, radisk: false, localStorage: true });
