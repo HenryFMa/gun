@@ -5,6 +5,6 @@
     { "src": "examples/gun-now.js", "use": "@now/node-server" }
   ],
   "routes": [
-    { "src": "/**/.*", "dest": "examples/gun-now.js" }
+    { "src": "(.*/.*)*", "dest": "examples/gun-now.js" }
   ]
 }
