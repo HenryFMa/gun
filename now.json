@@ -2,6 +2,7 @@
   "name": "gun-now",
   "version": 2,
   "builds": [
-    { "src": "examples/gun-now.js", "use": "@now/node-server" }
+    { "src": "examples/gun-now.js", "use": "@now/node-server" },
+    { "src": "examples/**", "use": "@now/static" }
   ]
 }
